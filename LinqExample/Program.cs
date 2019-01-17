@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace LinqExample
 {
@@ -10,6 +7,14 @@ namespace LinqExample
     {
         static void Main(string[] args)
         {
+            Personel personel = new Personel();
+            personel.KayitEkle();
+            Console.WriteLine("Ad soyada göre arama");
+            string arama = Console.ReadLine();
+            personel.Ara(arama);
+            Console.WriteLine("Maasa göre arama");
+            double aramamaas = double.Parse(Console.ReadLine());
+            personel.Ara(aramamaas);
         }
     }
 }
